@@ -10,7 +10,7 @@ html, body {
     max-height: 100%;
     margin: 0;
     padding: 0;
-    background-image: url(../Images/slide_image7.jpg);
+    background-image: url(../Images/slide_image8.jpg);
     background-size:100% 100%;
     background-repeat: no-repeat;
     position: relative;
@@ -40,7 +40,6 @@ li.dropdown {display: inline-block;}
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     z-index: 1;
 }
-
 .dropdown_items a {
     color: white;
     padding: 10px 12px;
@@ -48,7 +47,10 @@ li.dropdown {display: inline-block;}
     display: block;
     text-align: left;
 }
-.dropdown_items a:hover {background-color: rgb(255,255,255); color: rgb(0, 0,0);}
+.dropdown_items a:hover {
+    background-color: rgb(255,255,255);
+    color: rgb(0, 0,0);
+}
 .dropdown:hover .dropdown_items {display: block;}
 .sm_post {
     margin-right: 10%;
@@ -63,13 +65,12 @@ li.dropdown {display: inline-block;}
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #profile_img {
-    height: 20%;
-    width: 20%;
+    height: 100px;
+    width: 100px;
     margin: 5% 5% 0 5%;
+    border-radius: 50%;
 }
-#txt_usr_date {
-    margin: 5% 5% 0 5%;
-}
+#txt_usr_date {margin: 5% 5% 0 5%;}
 #txt_content {
     margin: 5% 5% 5% 5%;
     font-size: 30px;
