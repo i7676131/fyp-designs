@@ -1,35 +1,53 @@
-// Our labels along the x-axis
-var days = [1,2,3,4,5,6,7,8,9,10];
+// Data and labels
+var days = ['BournemouthTech','Ratio','SiliconBeach','HeatherBrown','RatioPi','ChooseWisely'];
+var twitter = [12,14,27,11,15,33];
+var chartLabel = 'Tweets of the Week';
 
-// For drawing the lines
-var twitter = [12,14,15,17,18,15,13,15,13,14];
-var instagram = [8,3,1,2,5,9,7,2,7,7];
-var facebook = [6,7,8,1,3,7,8,7,5,4];
-
+// Get chart element from HTML
 var ctx = document.getElementById("social_chart");
-var myChart = new Chart(ctx, {
-    type: 'line',
-    data: {
-        labels: days,
-        datasets: [
-            {
-                data: twitter,
-                label: "Twitter",
-                borderColor: "#3e95cd",
-                fill: false
-            },
-            {
-                data: instagram,
-                label: "Instagram",
-                borderColor: "#8e5ea2",
-                fill: false
-            },
-            {
-                data: facebook,
-                label: "Facebook",
-                borderColor: "#3cba9f",
-                fill: false
+
+var data = {
+
+    labels: days,
+    datasets: [{
+        label: chartLabel,
+        backgroundColor: "rgba(255,1,128,0.2)",
+        borderColor: "rgba(255,1,128,1)",
+        borderWidth: 2,
+        hoverBackgroundColor: "rgba(255,1,128,0.5)",
+        hoverBorderColor: "rgba(255,1,128,1)",
+        data: twitter
+    }]
+};
+var options = {
+
+    maintainAspectRatio: false,
+    scales: {
+        xAxes: [{
+            stacked: true,
+            gridLines: {
+                display: true,
+                color: "rgba(255,1,128,0.2)"
             }
-        ]
+        }],
+        yAxes: [{
+            gridLines: {
+                display: false
+            }
+        }]
+    },
+    legend: {
+        labels: {
+            fontSize: 20
+        }
     }
+};
+
+Chart.defaults.global.defaultFontColor = 'black';
+Chart.defaults.global.defaultFontSize = 16;
+
+var myChart = new Chart(ctx,{
+    type: 'horizontalBar',
+    options: options,
+    data: data
 });
