@@ -10,7 +10,6 @@ var data = {
 
     labels: days,
     datasets: [{
-        label: chartLabel,
         backgroundColor: "rgba(255,1,128,0.2)",
         borderColor: "rgba(255,1,128,1)",
         borderWidth: 2,
@@ -20,7 +19,12 @@ var data = {
     }]
 };
 var options = {
-
+    title: {
+        display: true,
+        text: chartLabel,
+        fontSize: 30,
+        padding: 12
+    },
     maintainAspectRatio: false,
     scales: {
         xAxes: [{
@@ -37,9 +41,7 @@ var options = {
         }]
     },
     legend: {
-        labels: {
-            fontSize: 20
-        }
+        display: false
     }
 };
 

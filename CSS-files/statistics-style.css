@@ -45,9 +45,9 @@ li.dropdown {display: inline-block;}
 .dropdown:hover .dropdown_items {display: block;}
 #sm_logo{
     padding: 50px;
-    height: 400px;
-    width: 400px;
-    position: absolute;
+    width: 20%;
+    float: left;
+    display: inline;
 }
 .chart_container{
     position: relative;
