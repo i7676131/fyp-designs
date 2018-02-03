@@ -10,13 +10,8 @@ html, body {
     max-height: 100%;
     margin: 0;
     padding: 0;
-    background-image: url(../Images/slide_image8.jpg);
-    background-size:100% 100%;
-    background-repeat: no-repeat;
-    position: relative;
 }
 ul {
-    list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -25,12 +20,11 @@ ul {
 }
 li {float: left;}
 li a {
-    display: block;
     color: white;
-    text-align: center;
     padding: 10px 12px;
     text-decoration: none;
 }
+li a:hover{color: rgb(255,1,128)}
 li.dropdown {display: inline-block;}
 .dropdown_items {
     display: none;
@@ -47,33 +41,14 @@ li.dropdown {display: inline-block;}
     display: block;
     text-align: left;
 }
-.dropdown_items a:hover {
-    background-color: rgb(255,255,255);
-    color: rgb(0, 0,0);
-}
+.dropdown_items a:hover {color: rgb(255,1,128);}
 .dropdown:hover .dropdown_items {display: block;}
-.sm_post {
-    margin-right: 10%;
+#sm_logo{
+    padding: 50px;
+    height: 200px;
+    width: 200px;
+}
+#social_chart{
+    width: 200px;
     height: auto;
-    width: 40%;
-    background-color: rgb(255,255,255);
-    float: right;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    opacity: 0.75;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-#profile_img {
-    height: 100px;
-    width: 100px;
-    margin: 5% 5% 0 5%;
-    border-radius: 50%;
-}
-#txt_usr_date {margin: 5% 5% 0 5%;}
-#txt_content {
-    margin: 5% 5% 5% 5%;
-    font-size: 30px;
-}
-
-

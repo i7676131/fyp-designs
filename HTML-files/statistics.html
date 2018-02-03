@@ -1,10 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Statistics</title>
+        <link rel="stylesheet" href="../CSS-files/statistics-style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js"></script>
+    </head>
+    <body>
+        <div class="page_container">
+            <ul>
+                <li>
+                    <div class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">•••</a>
+                        <div class="dropdown_items">
+                            <a href="#">About</a>
+                            <a href="#">Settings</a>
+                            <a href="#">Social Slide</a>
+                            <a href="#">Statistics</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
 
-</body>
+            <img id="sm_logo" src="../Images/Logos/stats-twitter.png">
+
+            <canvas id="social_chart"></canvas>
+            <script src="../scripts/graph-script.js"></script>
+        </div>
+    </body>
 </html>
