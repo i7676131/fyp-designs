@@ -24,7 +24,7 @@ li a {
     padding: 10px 12px;
     text-decoration: none;
 }
-li a:hover{color: rgb(255,1,128)}
+li a:hover {color: rgb(255,1,128)}
 li.dropdown {display: inline-block;}
 .dropdown_items {
     display: none;
@@ -44,18 +44,38 @@ li.dropdown {display: inline-block;}
 .dropdown_items a:hover {color: rgb(255,1,128);}
 .dropdown:hover .dropdown_items {display: block;}
 #sm_logo{
-    padding: 50px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    padding: 100px;
     width: 20%;
-    float: left;
-    display: inline;
 }
-.chart_container{
+.chart_container1{
     position: relative;
-    margin: 10vh;
-    padding: 10px;
-    height: 70vh;
+    float: left;
+    margin: 2.5% 2.5% 2.5% 2.5%;
+    height: 80vh;
+    width: 40vw;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 0.8;
+}
+.chart_container2{
+    position: relative;
+    float: left;
+    margin: 2.5% 2.5% 0 0;
+    height: 40vh;
     width: 50vw;
-    float: right;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 0.8;
+}
+.chart_container3{
+    position: relative;
+    float: left;
+    margin: 2.5% 2.5% 0 0;
+    height: 40vh;
+    width: auto;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     opacity: 0.8;
