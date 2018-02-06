@@ -59,14 +59,34 @@ li.dropdown {display: inline-block;}
     opacity: 0.80;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-#profile_img {
-    height: 100px;
-    width: 100px;
-    margin: 5% 5% 0 5%;
-    border-radius: 50%;
+#sm_logo {
+    height: 50px;
+    margin: 5% 5% 0 0;
+    position: relative;
+    float: right;
 }
-#txt_usr_date {margin: 5% 5% 0 5%;}
+#avatar {
+    height: 80px;
+    width: 80px;
+    margin: 5% 10px 0 5%;
+    border-radius: 50%;
+    position: relative;
+    float: left;
+}
+#txt_name {
+    margin: 50px 5% 0 5%;
+    position: relative;
+}
+#txt_username {
+    position: relative;
+}
 #txt_content {
-    margin: 5% 5% 5% 5%;
+    margin: 5% 5% 0 5%;
     font-size: 30px;
+}
+#txt_date {
+    margin: 0 5% 5% 0;
+    vertical-align: bottom;
+    position: relative;
+    float: right;
 }
