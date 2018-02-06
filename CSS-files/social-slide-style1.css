@@ -76,6 +76,7 @@ li.dropdown {display: inline-block;}
 #txt_name {
     margin: 50px 5% 0 5%;
     position: relative;
+    font-size: 20px;
 }
 #txt_username {
     position: relative;

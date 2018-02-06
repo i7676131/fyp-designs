@@ -1,6 +1,6 @@
 // Data and labels
-var days = ['BournemouthTech','Ratio','SiliconBeach','HeatherBrown','RatioPi','ChooseWisely'];
-var twitter = [12,14,27,11,15,33];
+var days = ['BournemouthTech','Ratio','SiliconBeach','HeatherBrown','RatioPi','ChooseWisely','Remora','Briefd'];
+var twitter = [12,14,27,11,15,33,37,12];
 var chartLabel = 'Tweets of the Week';
 
 // Get chart element from HTML
