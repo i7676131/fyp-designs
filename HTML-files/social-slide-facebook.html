@@ -4,7 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Social Feed</title>
-        <link rel="stylesheet" href="../CSS-files/social-slide-style-twitter.css">
+        <link rel="stylesheet" href="../CSS-files/social-slide-style-facebook.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     </head>
     <body>
         <div class="page_container">
@@ -25,11 +26,20 @@
                 <img id="avatar" src="../Images/profile_pic.jpg">
                 <img id="sm_logo" src="../Images/Logos/stats-face.png">
                 <div id="txt_name"><b>Ty Williams</b></div>
-                <div id="txt_username">•••</div>
-                <div id="txt_content"><b>Currently attending a Bournemouth Computing Society event, come join us and meet
-                     the team. We are located at the Talbot campus! Oh, and there are free snacks...</b></div>
+                <div id="txt_username"></div>
+                <div id="txt_content"><b>
+                    Currently attending a Bournemouth Computing Society event, come join us and meet
+                    the team. We are located at the Talbot campus! Oh, and there are free snacks...
+                </b></div>
                 <div id="txt_date"><b>2 Feb 2018</b></div>
+                <script>
+                    var content = '#txt_content';
+                    $(document).ready(function(){
+                        $(content).animate({scrollTop: $(content)[0].scrollHeight}, 10000);
+                    });
+                </script>
             </div>
         </div>
+
     </body>
 </html>
